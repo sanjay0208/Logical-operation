@@ -98,4 +98,3 @@ void loop() {
 ## RESULT:
 Thus the logical operation was performed by Arduino UNO controller
 
-Thus the logical operation was performed by Arduino UNO controller

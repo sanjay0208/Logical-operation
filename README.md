@@ -43,11 +43,59 @@ Logic gates are the basic building blocks of any digital system. It is an electr
 ![image](https://user-images.githubusercontent.com/71547910/235332254-db13d222-1246-4b57-bbb2-3ab2287ccaa8.png)
 
 ## PROGRAM:
+~~~
+int bs0 = 0;         // variable for reading the pushbutton status
+int bs1 = 0;
+int bs2 = 0;         // variable for reading the pushbutton status
+int bs3 = 0;
+int bs4 = 0;         // variable for reading the pushbutton status
+int bs5 = 0;
+void setup() {
+  pinMode(13, OUTPUT);
+  pinMode(0, INPUT);
+  pinMode(1, INPUT);
+  pinMode(2, INPUT);
+  pinMode(3, INPUT);
+  pinMode(4, INPUT);
+  pinMode(5, INPUT);
+}
+void loop() {
+
+  bs0 = digitalRead(0);
+  bs1 = digitalRead(1);
+  bs2 = digitalRead(2);
+  bs3 = digitalRead(3);
+  bs4 = digitalRead(4);
+  bs5 = digitalRead(5);
+
+  if (bs4 == 0 && bs5 == 0) 
+  {
+      digitalWrite(13, bs0);
+  } 
+  else if (bs4 == 0 && bs5 == 1) 
+  {
+    
+    digitalWrite(13, bs1);
+  }
+   else if (bs4 == 1 && bs5 == 0) 
+  {
+    
+    digitalWrite(13, bs2);
+  }
+   else   if (bs4 == 1 && bs5 == 1) 
+  {
+      digitalWrite(13, bs3);
+  } 
+}
+~~~
 
 ## CIRCUIT DIAGRAM:
+![image](https://github.com/sanjay0208/Logical-operation/assets/119406959/806d0af9-9a6c-4034-abe9-2298ae926bff)
 
 ## OUTPUT:
+![image](https://github.com/sanjay0208/Logical-operation/assets/119406959/d7307b2e-f132-4177-9b5b-9fc3c2e322f9)
 
 ## RESULT:
+Thus the logical operation was performed by Arduino UNO controller
 
 Thus the logical operation was performed by Arduino UNO controller
